@@ -1,37 +1,72 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title>{{ site.title }}</title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="1265.2">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #0000ee}
-    p.p5 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; color: #0000ee}
-    li.li3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; min-height: 14.0px}
-    li.li4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Songti SC'; color: #0000ee}
-    span.s1 {text-decoration: underline}
-    span.s2 {font: 12.0px 'Songti SC'; text-decoration: underline}
-    span.s3 {color: #000000}
-    ul.ul1 {list-style-type: disc}
-  </style>
-</head>
-<body>
-<p class="p1">{% if page.title == 'index' %} {% else %} {% endif %} {% if page.description %}{% endif %}</p>
-<p class="p2"><span class="s1"><a href="file:///Users/Yi/Documents/myblog/_includes/themes/twitter/%7B%7B%20HOME_PATH%20%7D%7D">{{ site.title }}</a></span></p>
-<p class="p1">{% assign pages_list = site.pages %} {% assign group = 'navigation' %} {% include JB/pages_list %}</p>
-<ul class="ul1">
-  <li class="li3"><br></li>
-</ul>
-<p class="p1">{% assign pages_list = site.pages %} {% assign group = 'meta' %} {% include JB/pages_list %}</p>
-<ul class="ul1">
-  <li class="li4"><span class="s1"><a href="http://silentlake.me/atom.xml">订阅<span class="s2"></span></a></span></li>
-</ul>
-<p class="p1">{{ site.tagline }}</p>
-<p class="p1">{{ content }}</p>
-<p class="p5"><span class="s3">© <a href="mailto:%7B%7B%20site.author.email%20%7D%7D"><span class="s1">{{ site.author.name }}</span></a> 2014. Proudly powered by <a href="http://jekyllbootstrap.com/"><span class="s1">Jekyll Bootstrap</span></a> and <a href="http://twitter.github.com/bootstrap/"><span class="s1">Twitter Bootstrap</span></a></span></p>
-<p class="p1">{% include JB/analytics %}<span class="Apple-converted-space"> </span></p>
-</body>
+  <head>
+    <meta charset="utf-8">
+    {% if page.title == 'index' %}
+    <title>{{ site.title }}</title>
+    {% else %}
+    <title>{{ page.title }} | {{ site.title }}</title>
+    {% endif %}
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <meta name="author" content="{{ site.author.name }}">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/favicon.ico">
+  <!-- Update these with your own images
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
+          <ul class="nav">
+            {% assign pages_list = site.pages %}
+            {% assign group = 'navigation' %}
+            {% include JB/pages_list %}
+            <li class="divider-vertical"></li>
+            {% assign pages_list = site.pages %}
+            {% assign group = 'meta' %}
+            {% include JB/pages_list %}
+
+            <li><a href="http://silentlake.me/atom.xml">订阅</a></li>
+          </ul>
+
+          <span class="pull-right slogan"> {{ site.tagline }} </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        {{ content }}
+      </div>
+
+      <footer>
+        <p>&copy; <a href="mailto:{{ site.author.email }}">{{ site.author.name }}</a> 2014. 
+          Proudly powered by <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    {% include JB/analytics %}
+    {% include JB/comments %}
+  </body>
 </html>
