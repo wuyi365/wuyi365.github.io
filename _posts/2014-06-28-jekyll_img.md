@@ -7,7 +7,7 @@ tags: [博客,Jekyll,Markdown]
 ---
 {% include JB/setup %}
 Markdown里插入图片的语法大概是这样的：   
-		<code>![Test01](/assets/image/ruiou01.jpg)</code>
+>     ![Test01](/assets/image/ruiou01.jpg)
 
 或者直接用html语言：    
 
@@ -15,7 +15,7 @@ Markdown里插入图片的语法大概是这样的：
 
 注意这里的路径就是你blog目录根目录下的路径，对于你的博客来说，这就是一个绝对路径。
 我开始的时候，犯了一个错误，使用了这样的相对路径：   
-<code>![Test01](././assets/image/ruiou01.jpg)</code>   
+>     ![Test01](././assets/image/ruiou01.jpg)    
 这样发布后文章图片在首页也可以显示，似乎没有问题，但是如果从归档(archiev)里进入这篇blog,图片就显示不出来了。
 寻找原因，查看图片源地址，原来归档后，jekyll会按照日期建立目录,你所有的博客文章会放在_site/年/月/日这样的目录结构下。最开始发布博客后，首页里图片是这样的:    
   http://silentlake.me/assets/image/ruiou01.jpg   
