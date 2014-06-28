@@ -1,4 +1,4 @@
-<div id="ds-thread" class="ds-thread" data-url="{{ page.url }}" data-title="{{ page.title }}" data-thread-key="{{ page.title }}"></div>
+<div id="ds-thread" class="ds-thread" data-url="{{ site.production_url }}{{ page.url }}" data-title="{{ page.title }}" data-thread-key="{{ page.id }}"></div>
 <script type="text/javascript">
 var duoshuoQuery = {short_name:"silentlake"};
     (function() {
