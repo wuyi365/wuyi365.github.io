@@ -8,7 +8,7 @@ tags: [有钱人,泡沫]
 {% include JB/setup %}
 
 昨天星期天，在福州路的大众书店闲逛，看到一本书，很有意思，于是买来读完了，今天记录下。   
-![highbetarick](/assets/image/betarich.jpg)    
+![highbetarick](/assets/image/betarich2.jpg)    
 书名是意译的，原名是《The High-beta Rich》,Beta在统计学和金融学中指的是相对波动，换句话说，Beta就是某个东西和同类相比的变化幅度。Beta为1.0就是股票（或者其他任何被测量的东西）紧跟着整个市场的变化而变化。如果beta值超过1.0则意味着股票波动相对于市场来说过高或者过低。
 
 ##现在有钱人beta值比以前高多了  
