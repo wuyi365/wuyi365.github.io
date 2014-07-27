@@ -29,20 +29,20 @@ tags: [旧制度与大革命,法国大革命]
 
 codyplay有一首歌，是讲法国大革命的，viva la vida，这首歌的主要人物是路易十六。
 
-Viva La Vida
-生命无上
-I used to rule the world
-Seas would rise when I gave the word
-Now in the morning I sleep alone
-Sweep the streets I used to own
-我曾经主宰世界。
-就连海面也随我的命令而上升
-如今我清晨独眠，
-在我曾拥有的井巷中彷徨。
-I used to roll the dice
-Feel the fear in my enemy's eyes
-Listen as the crowd would sing:
-"Now the old king is dead! Long live the king!"
+Viva La Vida    
+生命无上   
+I used to rule the world  
+Seas would rise when I gave the word  
+Now in the morning I sleep alone  
+Sweep the streets I used to own  
+我曾经主宰世界。  
+就连海面也随我的命令而上升  
+如今我清晨独眠，  
+在我曾拥有的井巷中彷徨。  
+I used to roll the dice  
+Feel the fear in my enemy's eyes  
+Listen as the crowd would sing:  
+"Now the old king is dead! Long live the king!"  
 
 。。。
 
