@@ -2,7 +2,7 @@
 layout: post
 title: "《股票作手回忆录》读书笔记"
 description: ""
-category: 
+category: 读书
 tags: [杰西·利弗莫尔,股票作手回忆录]
 ---
 {% include JB/setup %}   

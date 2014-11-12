@@ -2,7 +2,7 @@
 layout: post
 title: "《创新者的窘境》读书笔记"
 description: ""
-category: 
+category: 读书
 tags: [创新者的窘境,管理]
 ---
 {% include JB/setup %}

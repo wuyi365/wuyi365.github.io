@@ -2,7 +2,7 @@
 layout: post
 title: "《旧制度与大革命》阅读笔记"
 description: ""
-category: 
+category: 读书
 tags: [旧制度与大革命,法国大革命]
 ---
 {% include JB/setup %}
