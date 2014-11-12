@@ -2,7 +2,7 @@
 layout: post
 title: "《后会无期》观后杂感"
 description: ""
-category: 
+category: 电影
 tags: [后会无期,韩寒]
 ---
 {% include JB/setup %}
